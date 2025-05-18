@@ -1,0 +1,16 @@
+struct ZcmFrameQuality
+{
+    int64 timestamp;
+    int32 frame_id;
+    float[7] quality_probs;
+    boolean alert_flag;
+    string dominant_defect;
+}
+
+struct ZcmDiagInfo
+{
+    int64 timestamp;
+    float cpu_usage;
+    float gpu_usage;
+    float latency_ms;
+}

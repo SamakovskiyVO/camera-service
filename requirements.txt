@@ -1,0 +1,7 @@
+torch>=2.2
+opencv-python-headless>=4.9
+PyYAML>=6.0
+zcm>=1.1     
+psutil>=5.9
+pynvml>=11.5
+pytest>=8.1

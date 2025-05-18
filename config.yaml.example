@@ -1,0 +1,7 @@
+# Camera-service runtime config
+sub_channel: "ipc://RAW_CAMERA_FRAME"      # где слушаем кадры (uint8 BGR)
+pub_channel: "ipc://FRAME_QUALITY_RESULT"  # куда шлём детекцию
+diag_channel: "ipc://CAMERA_DIAGNOSTIC_INFO"
+model_path: "weights/model_ts.pt"          # TorchScript
+buffer_size: 5                             # для окна majority
+device: "cuda:0"                           # или "cpu"
