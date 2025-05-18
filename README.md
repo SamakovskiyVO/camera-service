@@ -14,8 +14,9 @@ cd camera-service
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# правим config.yaml.example → config.yaml
+правим config.yaml.example → config.yaml
 python -m src.main --config config.yaml
+
 ## Быстрый запуск (Docker)
 
 docker build -t camera-service docker/
